@@ -1,0 +1,55 @@
+<template lang="pug">
+.page3
+  img.share(src="")
+  img.replay(src="@|replay.png|" o-tap="location.reload();")
+  img.shareit(src="@|shareit.png|")
+</template>
+<script>
+module.exports = {
+  show: function () {
+    const code = owo.script.page2.data.code
+    switch (code) {
+      case 0:
+        this.query('.share').src = '@|code-0.png|'
+        break;
+      case 1:
+        this.query('.share').src = '@|code-1.png|'
+        break;
+      case 2:
+        this.query('.share').src = '@|code-2.png|'
+        break;
+      case 3:
+        this.query('.share').src = '@|code-3.png|'
+        break;
+      case 4:
+        this.query('.share').src = '@|code-4.png|'
+        break;
+      case 5:
+        this.query('.share').src = '@|code-5.png|'
+        break;
+      default:
+        break;
+    }
+  }
+}
+</script>
+<style lang="less">
+.page3 {
+  background-image: url('@|share-bg.png|')
+}
+.share {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 155px;
+}
+.replay, .shareit {
+  position: absolute;
+  bottom: 165px;
+  left: 100px;
+}
+.shareit {
+  left: 423px;
+}
+</style>

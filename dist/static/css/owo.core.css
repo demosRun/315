@@ -1,0 +1,399 @@
+body, html, .page, .page-box {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.owo-animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owo-animation-forward {
+  z-index: 99;
+}
+
+img {
+  border: none;
+}
+
+[route-active="false"] {
+  display: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.loading-box {
+  width: 100%;
+  height: 100%;
+  background-image: url('../resource/loading-bg.png');
+}
+
+.loading-box .loading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -27%;
+  bottom: 0;
+  margin: auto;
+}
+
+.loading-box .loading-bar {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  height: 26px;
+  background-color: #313981;
+  width: 80%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  border-radius: 23px;
+  box-shadow: 2px 3px 9px #5d739c;
+  border: 12px solid #d85160;
+}
+
+.loading-box .num-bar {
+  background-color: #d85160;
+  height: 30px;
+  border-radius: 26px;
+  transition: width 0.5s;
+  position: absolute;
+  left: -2px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.loading-box .num,
+.loading-box .text {
+  position: absolute;
+  top: 0%;
+  bottom: -10%;
+  margin: auto;
+  line-height: 50px;
+  height: 50px;
+  font-size: 38px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.loading-box .text {
+  bottom: -18%;
+}
+[o-animation="shrink"] {
+  -webkit-animation: shrink 1s linear alternate infinite;
+  animation: shrink 1s linear alternate infinite;
+}
+@-webkit-keyframes shrink{
+  0%{-webkit-transform:scale(0.9);}
+  100%{-webkit-transform:scale(1);}
+}
+@keyframes shrink{
+  0%{transform:scale(0.9);}
+  100%{transform:scale(1);}
+}
+
+@-webkit-keyframes flicker {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 20%;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 20%;
+  }
+}
+
+[o-animation="flicker"] {
+  -webkit-animation: flicker 2s linear 0s infinite alternate;
+  animation: flicker 2s linear 0s infinite alternate;
+}
+
+.page-1 .so {
+  position: absolute;
+}
+
+.page-1 .so-0 {
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1508px;
+  z-index: 0;
+}
+
+.page-1 .so-1 {
+  left: 64px;
+  top: 398px;
+  z-index: -1;
+}
+
+.page-1 .so-2 {
+  left: 42px;
+  top: 231px;
+  z-index: -2;
+}
+
+.page-1 .so-3 {
+  left: 264px;
+  top: 1223px;
+  z-index: 3;
+}
+
+.page-1 .so-4 {
+  left: 587px;
+  top: 255px;
+  z-index: -4;
+}
+
+.page-1 .so-5 {
+  left: 42px;
+  top: 458px;
+  width: 662px;
+  height: 642px;
+  z-index: -5;
+}
+
+.page-1 .so-6 {
+  left: 1px;
+  top: 163px;
+  z-index: -6;
+}
+
+.page-1 .so-7 {
+  left: 603px;
+  top: 310px;
+  z-index: -7;
+}
+
+.page-1 .so-8 {
+  left: 603px;
+  top: 65px;
+  z-index: -8;
+}
+
+.page-1 .so-9 {
+  left: 432px;
+  top: 0px;
+  z-index: -9;
+}
+
+.page-1 .so-10 {
+  left: 472px;
+  top: 69px;
+  z-index: -10;
+}
+
+.page-1 .so-11 {
+  left: 1px;
+  top: 0px;
+  z-index: -11;
+}
+
+.page-1 .so-12 {
+  left: 472px;
+  top: 193px;
+  z-index: -12;
+}
+
+.page-1 .so-13 {
+  left: 81px;
+  top: 150px;
+  z-index: -13;
+}
+
+.page-1 .so-14 {
+  left: 77px;
+  top: 335px;
+  z-index: -14;
+}
+
+.page-1 .so-15 {
+  left: 475px;
+  top: 554px;
+  z-index: -15;
+}
+
+.page-1 .so-16 {
+  left: 0px;
+  top: 555px;
+  z-index: -16;
+}
+
+.page-1 .so-17 {
+  left: 0px;
+  top: 443px;
+  z-index: -17;
+}
+
+.page-1 .so-18 {
+  left: 0px;
+  top: 0px;
+  z-index: -18;
+}
+.page2 {
+  background-color: black;
+}
+
+.page2 video {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.page2 .select-button {
+  background-image: url('../resource/button.png');
+  position: absolute;
+  bottom: 250px;
+  width: 642px;
+  height: 76px;
+  line-height: 69px;
+  color: white;
+  font-size: 34px;
+  text-align: center;
+  left: -640px;
+  margin: auto;
+  transition: left 1s;
+}
+
+.page2 .select-button-2 {
+  bottom: 150px;
+  left: 770px;
+}
+.page3 {
+  background-image: url('../resource/share-bg.png');
+}
+
+.page3 .share {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 155px;
+}
+
+.page3 .replay,
+.page3 .shareit {
+  position: absolute;
+  bottom: 165px;
+  left: 100px;
+}
+
+.page3 .shareit {
+  left: 423px;
+}
+
+/* 页面切换动画 */
+.o-page-moveToLeft {
+	-webkit-animation: moveToLeft .6s ease both;
+	-moz-animation: moveToLeft .6s ease both;
+	animation: moveToLeft .6s ease both;
+}
+
+@-webkit-keyframes moveToLeft {
+	to { -webkit-transform: translateX(-100%); }
+}
+@-moz-keyframes moveToLeft {
+	to { -moz-transform: translateX(-100%); }
+}
+@keyframes moveToLeft {
+	to { transform: translateX(-100%); }
+}
+.o-page-moveFromRight {
+	-webkit-animation: moveFromRight .6s ease both;
+	-moz-animation: moveFromRight .6s ease both;
+	animation: moveFromRight .6s ease both;
+}
+
+@-webkit-keyframes moveFromRight {
+	from { -webkit-transform: translateX(100%); }
+}
+@-moz-keyframes moveFromRight {
+	from { -moz-transform: translateX(100%); }
+}
+@keyframes moveFromRight {
+	from { transform: translateX(100%); }
+}
+
+/* 动画效果 */
+@keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInDown {
+  animation-name: bounceInDown;
+}
+

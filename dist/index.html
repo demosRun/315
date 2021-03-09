@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 页面的元信息 -->
+  <title>{TAG_14226_TAG}</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="filetype" content="1" />
+  <meta name="publishedtype" content="1" />
+  <meta name="pagetype" content="2" />
+  <meta name="screen-orientation" content="landscape" />
+  <meta name="x5-orientation" content="landscape" />
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="browsermode" content="application" />
+  <meta name="x5-page-mode" content="app" />
+
+  <!-- 页面主样式文件 -->
+  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.core.css">
+
+  <!-- 附属css文件 -->
+  <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
+
+</head>
+
+<body>
+  <div class="scale-box">
+    <!-- 页面[loading]-->
+    <div class="loading-box page" template="loading" style="display: none;">
+      <img class="loading" src="./static/resource/loading.png">
+      <div class="loading-bar">
+        <div class="num-bar"></div>
+      </div>
+      <span class="text">Loading</span>
+      <div class="num">0%</div>
+    </div>
+    <!-- 页面[page1]-->
+    <div class="page-1 page" template="page1" style="display: none;">
+      <div class="so so-0">
+        <img class="so so-1" src="./static/resource/202.png">
+        <img class="so so-2" src="./static/resource/509.png">
+        <img class="so so-3" src="./static/resource/201.png" o-animation="shrink" go="page2//moveToLeft/moveFromRight">
+        <img class="so so-4" src="./static/resource/511.png">
+        <div class="so so-5">
+          <img class="so so-6" src="./static/resource/586.png" o-animation="flicker" style="animation-delay:0.1s;animation-duration: 1.1s;">
+          <img class="so so-7" src="./static/resource/585.png" o-animation="flicker" style="animation-delay:0.3s;animation-duration: 1.2s;">
+          <img class="so so-8" src="./static/resource/584.png" o-animation="flicker" style="animation-delay:0.1s;animation-duration: 2s;">
+          <img class="so so-9" src="./static/resource/583.png" o-animation="flicker" style="animation-delay:0.2s;animation-duration: 1.6s;">
+          <img class="so so-10" src="./static/resource/582.png" o-animation="flicker" style="animation-delay:0.8s;animation-duration: 1.4s;">
+          <img class="so so-11" src="./static/resource/575.png" o-animation="flicker" style="animation-delay:0.6s;animation-duration: 1.8s;">
+          <img class="so so-12" src="./static/resource/576.png" o-animation="flicker" style="animation-delay:0.3s;animation-duration: 1.2s;">
+          <img class="so so-13" src="./static/resource/577.png" o-animation="flicker" style="animation-delay:0.4s;animation-duration: 1.7s;">
+          <img class="so so-14" src="./static/resource/578.png" o-animation="flicker" style="animation-delay:0.1s;animation-duration: 1.6s;">
+          <img class="so so-15" src="./static/resource/579.png" o-animation="flicker" style="animation-delay:1.1s;animation-duration: 1s;">
+          <img class="so so-16" src="./static/resource/580.png" o-animation="flicker" style="animation-delay:0.7s;animation-duration: 1.3s;">
+          <img class="so so-17" src="./static/resource/581.png" o-animation="flicker" style="animation-delay:0.1s;animation-duration: 1.2s;">
+        </div>
+        <img class="so so-18" src="./static/resource/399.jpg">
+      </div>
+    </div>
+    <!-- 页面[page2]-->
+    <div class="page2 page" template="page2" style="display: none;">
+      <video src="" x5-playsinline="true" x5-video-player-fullscreen="true" preload="auto" x5-video-orientation="portrait" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5"></video>
+      <div class="select-button select-button-1" o-tap="selectA">A、听“股神”的准没错 </div>
+      <div class="select-button select-button-2" o-tap="selectB">B、“股神”就是个大忽悠</div>
+    </div>
+    <!-- 页面[page3]-->
+    <div class="page3 page" template="page3" style="display: none;">
+      <img class="share" src="">
+      <img class="replay" src="./static/resource/replay.png" o-tap="location.reload();">
+      <img class="shareit" src="./static/resource/shareit.png">
+    </div>
+    <!-- 页面[page4]-->
+    <div class="page4 page" template="page4" style="display: none;"></div>
+  </div>
+
+  <!-- 框架script文件 -->
+  <script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    owo.script = {
+      "loading": {
+        "data": {
+          "imgList": ["./static/resource/share-bg.png", "./static/resource/code-0.png", "./static/resource/code-5.png", "./static/resource/code-1.png", "./static/resource/code-4.png", "./static/resource/code-2.png", "./static/resource/code-3.png", "./static/resource/202.png", "./static/resource/399.jpg", "./static/resource/511.png", "./static/resource/509.png", "./static/resource/loading.png", "./static/resource/shareit.png", "./static/resource/577.png", "./static/resource/201.png", "./static/resource/575.png", "./static/resource/581.png", "./static/resource/replay.png", "./static/resource/586.png", "./static/resource/578.png", "./static/resource/584.png", "./static/resource/582.png", "./static/resource/583.png", "./static/resource/576.png", "./static/resource/579.png", "./static/resource/585.png", "./static/resource/button.png", "./static/resource/580.png", "./static/resource/loading-bg.png"]
+        },
+        "show": function show() {
+          var mum = owo.query('.num')[0];
+          var numBar = owo.query('.num-bar')[0];
+          this.preloadImages(this.data.imgList, function(e) {
+            setTimeout(function() {
+              owo.go('page1////true');
+            }, 500);
+          }, function(num) {
+            numBar.style.width = num + '%';
+            mum.innerHTML = num + '%';
+          });
+        },
+        "preloadImage": function preloadImage(src, successFn) {
+          var image = new Image();
+          image.src = src;
+
+          image.onload = function() {
+            successFn && successFn(src);
+          };
+
+          image.onerror = function(error) {
+            successFn && successFn(src);
+          };
+        },
+        "preloadImages": function preloadImages(srcs, doneFn, progressFn) {
+          var _this = this;
+
+          if (!Array.isArray(srcs)) {
+            console.log('第一个参数只能是一个数组');
+          } else {
+            var allCount = srcs.length;
+            var doneCount = 0;
+            srcs.forEach(function(srcItem) {
+              _this.preloadImage(srcItem, function() {
+                doneCount++;
+                progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
+
+                if (doneCount === allCount) {
+                  doneFn && doneFn();
+                }
+              });
+            });
+          }
+        }
+      },
+      "page1": {
+        "created": function created() {
+          owo.animate('bounceInDown', this.query('.so-2'));
+        }
+      },
+      "page2": {
+        "data": {
+          "wenan": [
+            ["A、听“股神”的准没错", "B、“股神”就是个大忽悠", 1, "./static/resource/沙发 开头.mp4", "./static/resource/沙发 没被骗.mp4", "./static/resource/沙发 被骗.mp4"],
+            ["A、必须配合“警方”调查", "B、打110证明自己的清白", 1, "./static/resource/电梯 开头.mp4", "./static/resource/电梯 没被骗.mp4", "./static/resource/电梯 被骗.mp4"],
+            ["A、“客服”人真好听他的 ", "B、这事儿得找店家问问", 1, "./static/resource/电脑 开头.mp4", "./static/resource/电脑 没被骗.mp4", "./static/resource/电脑 被骗.mp4"],
+            ["A、珠子挺好不要白不要", "B、白送珠子肯定有猫腻", 1, "./static/resource/阳台电话 开头.mp4", "./static/resource/阳台电话 没被骗.mp4", "./static/resource/阳台电话 被骗.mp4"],
+            ["A、赶紧打电话把钱追回来", "B、太蹊跷去银行问问", 1, "./static/resource/冰箱 开头.mp4", "./static/resource/冰箱 没被骗.mp4", "./static/resource/冰箱 被骗.mp4"]
+          ],
+          "code": 0,
+          "activeIndex": 0,
+          "needNext": false
+        },
+        "created": function created() {
+          var _this2 = this;
+
+          this.setText();
+          var videoItem = this.query('video');
+          videoItem.src = this.data.wenan[this.data.activeIndex][3];
+          videoItem.currentTime = 0;
+          videoItem.play();
+
+          videoItem.onended = function() {
+            if (_this2.data.needNext) {
+              _this2.next();
+            } else {
+              _this2.data.needNext = true;
+
+              _this2.$el.classList.add('select');
+            }
+          };
+        },
+        "next": function next() {
+          this.data.needNext = false;
+          this.data.activeIndex++;
+
+          if (this.data.wenan[this.data.activeIndex]) {
+            this.setText();
+            var videoItem = this.query('video');
+            videoItem.src = this.data.wenan[this.data.activeIndex][3];
+            videoItem.currentTime = 0;
+            videoItem.play();
+          } else {
+            owo.go('page3//moveToLeft/moveFromRight');
+          }
+        },
+        "selectA": function selectA() {
+          if (this.data.wenan[this.data.activeIndex][2] == 0) {
+            this.duile();
+          } else {
+            this.cuole();
+          }
+        },
+        "selectB": function selectB() {
+          if (this.data.wenan[this.data.activeIndex][2] == 1) {
+            this.duile();
+          } else {
+            this.cuole();
+          }
+        },
+        "duile": function duile() {
+          this.$el.classList.remove('select');
+          this.data.code++;
+          var videoItem = this.query('video');
+          videoItem.src = this.data.wenan[this.data.activeIndex][4];
+          videoItem.currentTime = 0;
+          videoItem.play();
+        },
+        "cuole": function cuole() {
+          this.$el.classList.remove('select');
+          var videoItem = this.query('video');
+          videoItem.src = this.data.wenan[this.data.activeIndex][5];
+          videoItem.currentTime = 0;
+          videoItem.play();
+        },
+        "setText": function setText() {
+          this.query('.select-button-1').innerText = this.data.wenan[this.data.activeIndex][0];
+          this.query('.select-button-2').innerText = this.data.wenan[this.data.activeIndex][1];
+        }
+      },
+      "page3": {
+        "show": function show() {
+          var code = owo.script.page2.data.code;
+
+          switch (code) {
+            case 0:
+              this.query('.share').src = './static/resource/code-0.png';
+              break;
+
+            case 1:
+              this.query('.share').src = './static/resource/code-1.png';
+              break;
+
+            case 2:
+              this.query('.share').src = './static/resource/code-2.png';
+              break;
+
+            case 3:
+              this.query('.share').src = './static/resource/code-3.png';
+              break;
+
+            case 4:
+              this.query('.share').src = './static/resource/code-4.png';
+              break;
+
+            case 5:
+              this.query('.share').src = './static/resource/code-5.png';
+              break;
+
+            default:
+              break;
+          }
+        }
+      },
+      "page4": {}
+    };
+  </script>
+
+  <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="https://cunchu.site/owo/plug/autoScale.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
+
+</body>
+
+</html>

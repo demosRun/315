@@ -1,0 +1,120 @@
+<template lang="pug">
+.page2
+  video(src="" x5-playsinline="true" x5-video-player-fullscreen="true" preload="auto" x5-video-orientation="portrait" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5")
+  .select-button.select-button-1(o-tap="selectA") A、听“股神”的准没错  
+  .select-button.select-button-2(o-tap="selectB") B、“股神”就是个大忽悠
+</template>
+<script>
+module.exports = {
+  data: {
+    wenan: [
+      ['A、听“股神”的准没错', 'B、“股神”就是个大忽悠', 1, '@|沙发 开头.mp4|', '@|沙发 没被骗.mp4|', '@|沙发 被骗.mp4|'],
+      ['A、必须配合“警方”调查', 'B、打110证明自己的清白', 1, '@|电梯 开头.mp4|', '@|电梯 没被骗.mp4|', '@|电梯 被骗.mp4|'],
+      ['A、“客服”人真好听他的 ', 'B、这事儿得找店家问问', 1, '@|电脑 开头.mp4|', '@|电脑 没被骗.mp4|', '@|电脑 被骗.mp4|'],
+      ['A、珠子挺好不要白不要', 'B、白送珠子肯定有猫腻', 1, '@|阳台电话 开头.mp4|', '@|阳台电话 没被骗.mp4|', '@|阳台电话 被骗.mp4|'],
+      ['A、赶紧打电话把钱追回来', 'B、太蹊跷去银行问问', 1, '@|冰箱 开头.mp4|', '@|冰箱 没被骗.mp4|', '@|冰箱 被骗.mp4|'],
+    ],
+    code: 0,
+    activeIndex: 0,
+    needNext: false
+  },
+  created: function () {
+    this.setText()
+    const videoItem = this.query('video')
+    
+    videoItem.src = this.data.wenan[this.data.activeIndex][3]
+    videoItem.currentTime = 0
+    videoItem.play()
+    videoItem.onended = () => {
+      if (this.data.needNext) {
+        this.next()
+      } else {
+        this.data.needNext = true
+        this.$el.classList.add('select')
+      }
+      
+    };
+  },
+  next: function () {
+    this.data.needNext = false
+    this.data.activeIndex++
+    if (this.data.wenan[this.data.activeIndex]) {
+      this.setText()
+      const videoItem = this.query('video')
+      
+      videoItem.src = this.data.wenan[this.data.activeIndex][3]
+      videoItem.currentTime = 0
+      videoItem.play()
+    } else {
+      owo.go('page3//moveToLeft/moveFromRight')
+    }
+    
+  },
+  selectA: function () {
+    if (this.data.wenan[this.data.activeIndex][2] == 0) {
+      this.duile()
+    } else {
+      this.cuole()
+    }
+  },
+  selectB: function () {
+    if (this.data.wenan[this.data.activeIndex][2] == 1) {
+      this.duile()
+    } else {
+      this.cuole()
+    }
+  },
+  duile: function () {
+    this.$el.classList.remove('select')
+    this.data.code ++
+    const videoItem = this.query('video')
+    videoItem.src = this.data.wenan[this.data.activeIndex][4]
+    videoItem.currentTime = 0
+    videoItem.play()
+  },
+  cuole: function () {
+    this.$el.classList.remove('select')
+    const videoItem = this.query('video')
+    
+    videoItem.src = this.data.wenan[this.data.activeIndex][5]
+    videoItem.currentTime = 0
+    videoItem.play()
+  },
+  setText: function () {
+    this.query('.select-button-1').innerText = this.data.wenan[this.data.activeIndex][0]
+    this.query('.select-button-2').innerText = this.data.wenan[this.data.activeIndex][1]
+  }
+}
+</script>
+<style lang="less">
+.page2 {
+  background-color: black;
+}
+video {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.select-button {
+  background-image: url('@|button.png|');
+  position: absolute;
+  bottom: 250px;
+  width: 642px;
+  height: 76px;
+  line-height: 69px;
+  color: white;
+  font-size: 34px;
+  text-align: center;
+  left: -640px;
+  margin: auto;
+  transition: left 1s;
+}
+.select-button-2 {
+  bottom: 150px;
+  left: 770px;
+}
+
+</style>
